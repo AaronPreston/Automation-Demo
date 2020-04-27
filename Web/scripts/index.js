@@ -8,13 +8,16 @@ $(document).ready(function () {
 
 $(".submit-button").click(function () {
   $(".output-panel").css("top", "-250px");
+  $(".return-panel").html(`
+    <div class="link-box">Loading</div>
+  `);
 });
 
 $(".next-button").click(function () {
   if (currentTask === "Begin") {
     $(".output").html("Enter any website URL");
     $(".input-panel").css("display", "inline");
-    $(".next-button").html("<i class='fas fa-arrow-circle-right'></i>");
+    $(".next-button").html(`<i class='fas fa-arrow-circle-right'></i>`);
     $(".next-button").addClass("button-bottom-right");
     currentTask = "URL Screenshot";
   } else if (currentTask === "URL Screenshot") {
