@@ -59,16 +59,60 @@ body {
   margin-top: -16px;
   margin-left: 8px;
   padding: 18px 30px;
+  background-color: gray;
+  border: none;
+  transition: background-color 0.5s ease;
 }
 
 .link-box {
   position: absolute;
   background-color: white;
-  left: 20%;
-  right: 20%;
+  left: 30%;
+  right: 30%;
   margin-top: 40px;
-  height: 350px;
+  height: 250px;
   border-radius: 6px;
   color: black;
-  padding-top: 150px;
+}
+
+.link-box .loading {
+  margin-top: 110px;
+  color: black;
+}
+
+.link-box .title {
+  text-align: left;
+  margin-left: 250px;
+  margin-top: 28px;
+  font-size: 30px;
+  color: black;
+}
+
+.link-box .url {
+  color: rgb(97, 97, 97);
+  text-align: left;
+  margin-left: 250px;
+  font-size: 18px;
+}
+
+.link-box .description {
+  color: black;
+  text-align: left;
+  margin-left: 250px;
+  margin-top: 10px;
+  padding-right: 40px;
+}
+
+.link-box .screenshot {
+  position: absolute;
+  width: 220px;
+  height: 123px;
+  top: 30px;
+  left: 20px;
+}
+
+.link-box .response {
+  color: black;
+  margin-top: 90px;
+  font-size: 30px;
 }
